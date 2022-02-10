@@ -1,0 +1,349 @@
+/*  Файл "Таблица стилей".
+ *  Название: style.css
+ *  Краткое описание:
+ *      Содержит таблицу стилей.
+ */
+@charset "utf-8";
+/*Общий стиль*/
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+html {height: 100%; min-width: 980px;}
+/*Тело документа*/
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #FAFAFA;
+	font-family: "Segoe UI";	
+	font-size: 1em;
+	line-height: 135%;
+	
+}
+/*Гиперссылки*/
+a{
+	color: black;
+	text-decoration: none;
+}
+/*разделение плавающих блоков*/
+.clear {
+	clear:both;
+}
+
+/*------------СТИЛИ ДЛЯ ШАПКИ--------------*/
+
+/*Общий стиль*/
+header{
+	width: 98%;
+	padding: 1%;
+	background-color: #EFCFCD; 
+	border-bottom: 10px solid silver;
+	height: 40px;
+	font-family: sans serif;
+	font-size: 20px; 
+	text-align:center;
+	
+}
+/*Прописные буквы в шапке*/
+#myheader{
+	color: #4A4AFF;
+	font-family: ;
+
+}
+
+#News, #Consulting, #User, #Registration, #SignUp {
+	border: 1px solid black;
+	border-radius: 5px;	
+	padding: 5px;
+	display:inline-block;
+	vertical-align:middle;
+	background-color: #E9A9A4;
+}
+
+#News:hover, #Consulting:hover, #User:hover, #Registration:hover, #SignUp:hover{
+	color: #4A4AFF;
+	background-color: #D0665F;
+	-webkit-transition: all.6s ease;
+}
+/*Новостной блок*/
+#News{
+	margin-right:10px;
+}
+/*Консультации*/
+#Consulting{
+	margin-right:10px;
+}
+/*Редактирование профиля*/
+#User{
+
+	text-align:right;
+	padding-right:4px
+}
+/*Информация о психологе*/
+#About{
+	display:inline-block;
+	vertical-align:middle;
+	text-align: center;
+	font-size:1.2em;
+	line-height:30px;
+	
+
+	margin-top:-10px;
+	font-family:Verdana;
+	font-weight:900;
+}
+
+#About:hover {
+	color: black;
+	-webkit-transition: all.6s ease;
+}
+
+
+/*----------------ГЛАВНЫЙ БЛОК--------------------*/
+#bodyBlock{
+	width: 60%;
+	min-width:900px;
+	height: 100%;
+	margin: auto;
+	margin-top: 10px;
+	border-left: 2px solid #DCDCDC;
+	border-right: 2px solid #DCDCDC;
+	padding: 20px;
+	background-color: white;
+}
+
+/*Информация о психологе*/
+#mainText{
+	padding: 20px;
+	font-size: 1.3em;
+	font-family: Roboto Condensed ;
+	line-height:30px;
+}
+
+/*Фото над главным блоком*/
+#mainPhoto{
+	width:100%;
+	height: 300px;
+	overflow: hidden;
+	margin: auto;
+	border: 5px hidden;
+
+}
+
+#mainPhoto img{
+	-webkit-animation:mymove 50s infinite;
+	position: relative;
+	height: 150%;
+	width: 150%;
+}
+/* параметры анимации */
+@-webkit-keyframes mymove{
+	0% { left: 0px; }
+	50% {left: -450px; }
+    100% { left: 0; }
+}
+/*-----------------СТИЛИ ДЛЯ ФУТЕРА-----------------*/
+footer{
+	width: 100%;
+	height: 12%;
+	min-height:125px;
+	margin-top: 10px;
+	background-color: #E2E2F6;
+	border-top: 10px solid silver;
+	float:left;
+}
+/*Права*/
+#rights{
+	text-align: right;
+	width: 50%;
+	height: 20%;
+	margin-top: 50px;
+	margin-right: 10px;
+	float: right;
+}
+/*Соцсети*/
+#social{
+	width: 30%;
+	float: left;
+	height: 60%;
+	margin-top: 45px;
+	margin-left: 10px;
+}
+
+#social img {
+	height: 30px;
+	weight: 30px;
+	margin-right:10px;
+}
+
+/*----------------------СТИЛИ ДЛЯ ПРЕДПРОСМОТРА СТАТЕЙ------------------------*/
+.articlePreview{
+	height: 60%;
+	width: 48.5%;
+	background-color: #FCFCF3;
+	overflow: hidden;
+	float:left;
+	margin-left:1%;
+	font-family: Times New Roman;
+	text-align: center;
+	box-shadow: 3px 3px 5px #DCDCDC;
+}
+/*Заголовок*/
+.previewTitle{
+	height:70px;
+	font-size: 1.3em;
+	margin: 20px;
+	line-height:30px;
+	font-family: Building;
+
+}
+/*Картинка*/
+.articleImg {
+	height: 280px;
+	width: 100%;
+	overflow:hidden;
+	border-bottom: 1px solid black;
+	margin-bottom:10px;
+
+}
+
+.articleImg img {
+	height:100%;
+	width: 100%;
+}
+/*Вступительный текст*/
+.previewIntro {
+	margin-top: 10px;
+	font-size:1.1em;
+
+}
+/*--------------------------СТИЛИ ДЛЯ СТАТЬИ-------------------------------------*/
+/*Заголовок*/
+.articleTitle{
+	font-size:1.5em;
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+/*Статья*/
+.article{
+	font-family:Bahnschrift SemiLight ;
+	font-size:1.3em;
+	line-height:30px;
+	text-align:justify;
+	padding-left:40px;
+	padding-right: 15px;
+}
+
+.article p{
+	margin-bottom: 18px;
+	line-height:22px;
+}
+/*---------------------------СТИЛИ ДЛЯ КОММЕНТАРИЕВ------------------------------*/
+/*Общий стиль блока*/
+#commentsBlock{
+	width: 60%;
+	margin: auto;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: white;
+}
+/*Комментарий*/
+.comment{
+
+	width:90%;
+	border: 1px solid #DCDCDC;
+	border-radius: 10px;
+	padding:10px;
+}
+/*Заголовок*/
+.commentHead{
+	display: table;
+	height: 20px;	
+	display: flex;
+ box-align:end;
+}
+/*Имя пользователя*/
+.nickname{
+	font-size: 1.1em;
+	margin-right:10px;
+	float:left;
+
+}
+/*Дата отправки*/
+.date{
+	font-size:0.9em;
+	float:left;
+	margin-top:2px;
+}
+/*----------------------------ОБРАТНАЯ ФОРМА ДЛЯ ЗАЯВКИ------------------------------------*/
+/*Общий стиль блока*/
+#Form{
+	width: 50%;
+	margin: auto;
+	text-align:center;
+	
+}
+/*Стиль для формы*/
+#bodyBlock input{
+	width:300px;
+	height: 30px;
+	margin-bottom:20px;
+	text-align:center;
+}
+/*Заголовок формы*/
+#bodyBlock h1{
+	margin-bottom:20px;
+	text-align:center;
+}
+#mainText img{
+	height: 400px;
+	width: 480px;
+	float:right;
+	margin-left: 100px;
+	font-size: 1.4em;
+}
+/*Оформление списка*/
+.list{
+	margin-top:30px;
+	margin-bottom:30px;
+	margin-left:30px;
+	box-shadow: 3px 3px 10px #DCDCDC ;
+	padding:15px;
+	padding-left:30px;
+}
+/*Заголовок*/
+.textTitle{
+	font-size: 1.4em;
+	margin-bottom:20px;
+}
+/*Информация о консультациях*/
+.textBox{
+	margin-bottom:30px;
+	margin-left:30px;
+	box-shadow: 3px 3px 10px #DCDCDC ;
+	padding:15px;
+	padding-left:30px;
+
+}
+/*Результат отправки заявки*/
+#messageShow{
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
